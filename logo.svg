@@ -1,0 +1,26 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="25" cy="25" r="23" fill="#8B5E3C" stroke="#E9DCC9" stroke-width="2"/>
+  
+  <!-- Cinnamon Stick Curve -->
+  <path d="M15 30C18 25 20 15 25 13C30 15 32 25 35 30" stroke="#E9DCC9" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Cinnamon Bark Line -->
+  <path d="M15 22C19 25 30 25 35 22" stroke="#E9DCC9" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Subtle Details -->
+  <path d="M17 17.5C20 18.5 22.5 17 25 15.5C27.5 17 30 18.5 33 17.5" stroke="#E9DCC9" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Leaf Detail -->
+  <path d="M25 8C26.5 9.5 28 12 27 14.5" stroke="#4B7F52" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M25 8C23.5 9.5 22 12 23 14.5" stroke="#4B7F52" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Subtle Texture Lines -->
+  <path d="M18 27C19 28 21 28.5 23 28.5" stroke="#E9DCC9" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <path d="M27 28.5C29 28.5 31 28 32 27" stroke="#E9DCC9" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Small Decorative Elements -->
+  <circle cx="25" cy="10" r="1" fill="#E9DCC9"/>
+  <circle cx="18" cy="22" r="0.8" fill="#E9DCC9"/>
+  <circle cx="32" cy="22" r="0.8" fill="#E9DCC9"/>
+</svg>

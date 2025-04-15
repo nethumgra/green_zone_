@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Green Zone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4B7F52',
+            secondary: '#8B5E3C',
+            tertiary: '#E9DCC9',
+            background: '#F9F5F0',
+            darkText: '#333333',
+            lightText: '#FFFFFF'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-darkText font-sans">
+  <!-- Header with Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-primary text-white shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <svg class="h-10 w-10 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="23" fill="#8B5E3C" stroke="#E9DCC9" stroke-width="2"/>
+            <path d="M15 30C18 25 20 15 25 13C30 15 32 25 35 30" stroke="#E9DCC9" stroke-width="2"/>
+            <path d="M15 22C19 25 30 25 35 22" stroke="#E9DCC9" stroke-width="2"/>
+          </svg>
+          <h1 class="text-2xl font-bold tracking-tight">Green Zone</h1>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li><a href="index.html" class="font-medium hover:text-tertiary transition-colors duration-200 hover:border-b-2 hover:border-tertiary pb-1">Home</a></li>
+            <li><a href="about.html" class="font-medium hover:text-tertiary transition-colors duration-200 hover:border-b-2 hover:border-tertiary pb-1">About</a></li>
+            <li><a href="products.html" class="font-medium hover:text-tertiary transition-colors duration-200 hover:border-b-2 hover:border-tertiary pb-1">Products</a></li>
+            <li><a href="contact.html" class="font-medium text-white border-b-2 border-white pb-1">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <ul class="flex flex-col space-y-4">
+          <li><a href="index.html" class="block font-medium hover:text-tertiary transition-colors duration-200">Home</a></li>
+          <li><a href="about.html" class="block font-medium hover:text-tertiary transition-colors duration-200">About</a></li>
+          <li><a href="products.html" class="block font-medium hover:text-tertiary transition-colors duration-200">Products</a></li>
+          <li><a href="contact.html" class="block font-medium text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="relative pt-32 pb-20 bg-secondary">
+    <div class="absolute inset-0 opacity-20 bg-pattern"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contact Us</h1>
+      <p class="text-lg text-white/90 max-w-3xl mx-auto">We'd love to hear from you. Get in touch with our team for any questions, feedback, or business inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="contact-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-map-marker-alt text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-4">Our Location</h3>
+          <p class="text-gray-600">123 Spice Road,<br>Colombo,<br>Sri Lanka</p>
+        </div>
+        
+        <div class="contact-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-envelope text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-4">Email Us</h3>
+          <p class="text-gray-600 mb-2">General Inquiries:<br><a href="mailto:info@greenzone.com" class="text-secondary hover:underline">info@greenzone.com</a></p>
+          <p class="text-gray-600">Business Orders:<br><a href="mailto:orders@greenzone.com" class="text-secondary hover:underline">orders@greenzone.com</a></p>
+        </div>
+        
+        <div class="contact-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-phone-alt text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-4">Call Us</h3>
+          <p class="text-gray-600 mb-2">Customer Support:<br><a href="tel:+94123456789" class="text-secondary hover:underline">+94 123 456 789</a></p>
+          <p class="text-gray-600">International Orders:<br><a href="tel:+94987654321" class="text-secondary hover:underline">+94 987 654 321</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-16 bg-tertiary/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold text-primary mb-6">Send Us a Message</h2>
+          <p class="text-gray-600 mb-8">Whether you have a question about our products, need assistance with an order, or want to discuss business opportunities, we're here to help. Fill out the form and we'll get back to you as soon as possible.</p>
+          
+          <div class="mb-8">
+            <h3 class="text-xl font-bold text-secondary mb-4">Business Hours</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex justify-between">
+                <span>Monday - Friday:</span>
+                <span>9:00 AM - 6:00 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Saturday:</span>
+                <span>10:00 AM - 4:00 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Sunday:</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-bold text-secondary mb-4">Connect With Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="bg-primary hover:bg-primary/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="bg-primary hover:bg-primary/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="bg-primary hover:bg-primary/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="bg-primary hover:bg-primary/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <form id="contact-form" class="bg-white p-8 rounded-xl shadow-md">
+            <div class="mb-6">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+            </div>
+            
+            <div class="mb-6">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+            </div>
+            
+            <div class="mb-6">
+              <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-y"></textarea>
+            </div>
+            
+            <div class="mb-6">
+              <label class="flex items-center">
+                <input type="checkbox" class="form-checkbox h-5 w-5 text-primary rounded focus:ring-primary">
+                <span class="ml-2 text-gray-600 text-sm">Subscribe to our newsletter for updates on new products and promotions.</span>
+              </label>
+            </div>
+            
+            <div>
+              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center justify-center">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary mb-4">Find Us</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Visit our headquarters or contact us to arrange a tour of our cinnamon plantations.</p>
+      </div>
+      
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <!-- Replace with actual map embed code -->
+        <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+          <div class="text-center p-8">
+            <i class="fas fa-map-marked-alt text-primary text-5xl mb-4"></i>
+            <p class="text-gray-600">Interactive map would be displayed here, showing our location in Sri Lanka.</p>
+            <p class="text-gray-500 mt-2">Map API integration would show our headquarters at 123 Spice Road, Colombo, Sri Lanka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="py-16 bg-tertiary/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Quick answers to common questions about contacting us and placing orders.</p>
+      </div>
+      
+      <div class="space-y-6 max-w-4xl mx-auto">
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-question w-full px-6 py-4 text-left font-bold flex justify-between items-center">
+            <span>How quickly do you respond to inquiries?</span>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 py-4 border-t border-gray-200 hidden">
+            <p class="text-gray-600">We aim to respond to all inquiries within 24 hours during business days. For urgent matters, please call our customer support line for immediate assistance.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-question w-full px-6 py-4 text-left font-bold flex justify-between items-center">
+            <span>Do you offer bulk pricing for businesses?</span>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 py-4 border-t border-gray-200 hidden">
+            <p class="text-gray-600">Yes, we offer special pricing for bulk orders and business customers. Please contact our business orders team at orders@greenzone.com with details of your requirements, and we'll provide a customized quote.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-question w-full px-6 py-4 text-left font-bold flex justify-between items-center">
+            <span>Can I visit your plantation?</span>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 py-4 border-t border-gray-200 hidden">
+            <p class="text-gray-600">We welcome visitors to our cinnamon plantations! We offer scheduled tours for both individuals and groups. Please contact us at least two weeks in advance to arrange a visit, as our plantations are located in rural areas and require preparation for tours.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-question w-full px-6 py-4 text-left font-bold flex justify-between items-center">
+            <span>How can I become a distributor?</span>
+            <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer px-6 py-4 border-t border-gray-200 hidden">
+            <p class="text-gray-600">We're always looking to expand our distribution network with partners who share our commitment to quality. To apply to become a distributor, please send an email to partnerships@greenzone.com with information about your business, target market, and distribution capabilities. Our partnerships team will review your application and respond within 5 business days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Message (Hidden by default) -->
+  <div id="success-message" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-xl max-w-md w-full p-8 text-center">
+      <div class="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+        <i class="fas fa-check text-3xl"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-primary mb-4">Message Sent Successfully!</h3>
+      <p class="text-gray-600 mb-6">Thank you for contacting us. We've received your message and will get back to you as soon as possible.</p>
+      <button id="close-success" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <svg class="h-10 w-10 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="23" fill="#8B5E3C" stroke="#E9DCC9" stroke-width="2"/>
+              <path d="M15 30C18 25 20 15 25 13C30 15 32 25 35 30" stroke="#E9DCC9" stroke-width="2"/>
+              <path d="M15 22C19 25 30 25 35 22" stroke="#E9DCC9" stroke-width="2"/>
+            </svg>
+            <h3 class="text-xl font-bold">Green Zone</h3>
+          </div>
+          <p class="text-white/80 mb-4">Premium Ceylon cinnamon products sourced directly from Sri Lanka.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-tertiary transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white hover:text-tertiary transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white hover:text-tertiary transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white hover:text-tertiary transition-colors"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-white/80 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-white/80 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="products.html" class="text-white/80 hover:text-white transition-colors">Products</a></li>
+            <li><a href="contact.html" class="text-white/80 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Products</h4>
+          <ul class="space-y-2">
+            <li><a href="products.html" class="text-white/80 hover:text-white transition-colors">Cinnamon Sticks</a></li>
+            <li><a href="products.html" class="text-white/80 hover:text-white transition-colors">Cinnamon Powder</a></li>
+            <li><a href="products.html" class="text-white/80 hover:text-white transition-colors">Cinnamon Oil</a></li>
+            <li><a href="products.html" class="text-white/80 hover:text-white transition-colors">Gift Packages</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-tertiary"></i>
+              <span class="text-white/80">123 Spice Road, Colombo, Sri Lanka</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-tertiary"></i>
+              <span class="text-white/80">info@greenzone.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3 text-tertiary"></i>
+              <span class="text-white/80">+94 123 456 789</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p>&copy; 2025 Green Zone. All rights reserved.</p>
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="text-white/80 hover:text-white mr-4 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-white/80 hover:text-white mr-4 transition-colors">Terms of Service</a>
+          <a href="#" class="text-white/80 hover:text-white transition-colors">Shipping Info</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
